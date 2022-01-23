@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-/* ---共通部分--- */
+/* 共通部分
+-------------------------------- */
 html {
       font-size: 100%;
 }
@@ -49,7 +50,8 @@ img {
       padding: 0 4%;
 }
 
-/* ---home--- */
+/* home
+------------------------------ */
 .home-content {
       text-align: center;
       margin-top: 10%;
@@ -93,7 +95,8 @@ img {
       text-transform: none;
 }
 
-/* ---Newsページ--- */
+/* Newsページ
+------------------------- */
 #news {
       background-image: url(../images/news-bg.jpg);
       height: 270px;
@@ -191,4 +194,67 @@ aside p {
 }
 .sub-menu a:hover {
       color: #0bd;
+}
+
+/* モバイル版
+--------------------------- */
+@media (max-width: 600px) {
+      .page-title{
+            font-size: 2.5rem;
+      }
+      
+      /* header */
+      .main-nav {
+            font-size: 1rem;
+            margin-top: 10px;
+      }
+      .main-nav li {
+            margin: 0 20px;
+      }
+
+      /* home */
+      .home-content {
+            margin-top: 20%;
+      }
+      .page-header {
+            flex-direction: column;
+            align-items: center;
+      }
+      /* news */
+      .news-contents {
+            flex-direction: column;
+      }
+      article,
+      aside {
+            width: 100%;
+      }
+      #news .page-title {
+            margin-top: 30px;
+      }
+      aside {
+            margin-top: 60px;
+      }
+      .post-info {
+            margin-bottom: 30px;
+      }
+      .post-date {
+            width: 70px;
+            height: 70px;
+            font-size: 1rem;
+      }
+      .post-date span {
+            font-size: 0.875rem;
+            padding-top: 2px;
+      }
+      .post-title {
+            font-size: 1.375rem;
+      }
+      .post-cat {
+            font-size: 0.875;
+            margin-top: 10px;
+      }
+      .post-title,
+      .post-cat {
+            margin-left: 80px;
+      }
 }
